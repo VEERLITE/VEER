@@ -97,7 +97,7 @@ redis:set(VEER..":DataCenter:",GetUser.information.DataCenter)
 redis:set(VEER..":UserNameBot:",BOT_User)
 redis:set(VEER..":NameBot:",BOT_NAME)
 redis:hset(VEER..'username:'..GetUser.information.id,'username','@'..GetUser.information.username:gsub('_',[[\_]]))
-redis:set("TH3VEER_INSTALL","Yes")
+redis:set("VEER_INSTALL","Yes")
 info = {}
 info.username = '@'..GetUser.information.username
 info.userbot  = BOT_User
